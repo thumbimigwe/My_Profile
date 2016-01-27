@@ -60,6 +60,8 @@ Main Components
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
+
+/***********ABOUT************/
 .projects-container .cd-single-project::after {
   /* background image */
   content: '';
@@ -68,7 +70,7 @@ Main Components
   left: 0;
   height: 25vh;
   width: 100%;
-  background-image: url("../img/img-1-small.jpg");
+  background-image: url("../img/thoshh.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -76,37 +78,44 @@ Main Components
   -moz-transition: opacity 0.5s, height 0.4s;
   transition: opacity 0.5s, height 0.4s;
 }
+
 .projects-container .cd-single-project::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/img-1-small.jpg';
+  content: 'img/thoshh.jpg';
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
   top: 25vh;
 }
+
+/***********PORTFOLIO************/
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/img-2-small.jpg");
+  background-image: url("../img/background_portfolio.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: 'img/img-2-small.jpg';
+  content: 'img/background_portfolio.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
 }
+
+/***********BLOG************/
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/img-3-small.jpg");
+  background-image: url("../img/Blogger.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: 'img/img-3-small.jpg';
+  content: 'img/Blogger.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
 }
+
+/***********CONTACTS************/
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("../img/img-4-small.jpg");
+  background-image: url("../img/Talk%20To%20me.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: 'img/img-4-small.jpg';
+  content: 'img/Talk%20To%20me.jpg';
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */
@@ -116,6 +125,10 @@ Main Components
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+
+
+
+
 .projects-container .cd-single-project.is-full-width {
   /* selected item */
   top: 0;
@@ -147,6 +160,9 @@ Main Components
     -moz-transition: width 0s;
     transition: width 0s;
   }
+    
+    
+/***********CONTACTS************/    
   .projects-container .cd-single-project:first-of-type::before {
     content: 'img/img-1-large.jpg';
   }
@@ -157,6 +173,9 @@ Main Components
     top: 0;
     left: 25vw;
   }
+    
+    
+/***********CONTACTS************/    
   .projects-container .cd-single-project:nth-of-type(2)::before {
     content: 'img/img-2-large.jpg';
   }
@@ -167,6 +186,9 @@ Main Components
     top: 0;
     left: 50vw;
   }
+    
+    
+/***********CONTACTS************/    
   .projects-container .cd-single-project:nth-of-type(3)::before {
     content: 'img/img-3-large.jpg';
   }
@@ -177,6 +199,10 @@ Main Components
     top: 0;
     left: 75vw;
   }
+    
+    
+    
+/***********CONTACTS************/    
   .projects-container .cd-single-project:nth-of-type(4)::before {
     content: 'img/img-4-large.jpg';
   }
@@ -188,9 +214,16 @@ Main Components
     width: 100%;
     opacity: 0;
   }
+    
+    
+    
+    
+    
+    
+    
   .projects-container .cd-single-project.is-loaded {
     /* show items when background images have been loaded */
-    opacity: 1;
+    opacity: 0.5;
   }
   .projects-container .cd-single-project.is-loaded::after {
     opacity: 1;
