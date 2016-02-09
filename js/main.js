@@ -71,11 +71,7 @@ jQuery(document).ready(function($){
 	}
 });
 
- /*
- * BG Loaded
- * Copyright (c) 2014 Jonathan Catmull
- * Licensed under the MIT license.
- */
+
  (function($){
  	$.fn.bgLoaded = function(custom) {
 	 	var self = this;
